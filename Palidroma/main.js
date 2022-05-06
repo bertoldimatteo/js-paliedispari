@@ -12,7 +12,13 @@
 function analyzeWord(word) {
     const slice = word.split("");
     const reverse = slice.reverse("");
-    
+    const joinReverse = reverse.join("");
+
+    if ( word == joinReverse ) {
+        alert("la parola e palindroma");
+    } else {
+        alert("la parola non e palindroma");
+    }
 }
 
-console.log(analyzeWord("ciao"));
+analyzeWord("anna");
