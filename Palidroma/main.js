@@ -6,3 +6,13 @@
 // 3 prendo la parola e assegno un indice
 // se capovolgendo la parola è identica compare l'avviso "la parola e palindroma"
 // altrimenti compare l'avviso "la parola non e palindroma"
+
+// const userInput = prompt("Scrivi una parola");
+
+function analyzeWord(word) {
+    const slice = word.split("");
+    const reverse = slice.reverse("");
+    
+}
+
+console.log(analyzeWord("ciao"));
