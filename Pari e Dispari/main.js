@@ -21,20 +21,21 @@ function checkNumber() {
     const cpuNumber = randomCPUnumber();
     const result = cpuNumber + userNumber;
 
-    if (result % 2 == 0 && userInput == "pari") {
-        console.log("Hai vinto!");
-    } else if ( result % 2 == 1 && userInput == "dispari") {
-        console.log("Hai vinto!");
+    let text = result;
+
+    if (result % 2 == 0 && userInput == "pari" || result % 2 == 1 && userInput == "dispari") {
+        text += " Hai vinto";
     } else {
-        console.log("Hai perso!");
+        text += " Hai perso";
     }    
 
     console.log(userNumber);
     console.log(cpuNumber);
     console.log(result);
 
-}
+    return text;
 
+}
 
 alert(checkNumber());
 
